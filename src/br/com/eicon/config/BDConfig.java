@@ -8,7 +8,7 @@ public class BDConfig {
 	public static Connection getConnection() throws SQLException,ClassNotFoundException{
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost/Eicon","root","macacofr");
+            return DriverManager.getConnection("jdbc:mysql://localhost/Eicon","root","*******");
         } catch (SQLException e){
             throw new RuntimeException(e);
         }
